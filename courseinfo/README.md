@@ -1,16 +1,13 @@
-# React + Vite
+حل أسئلة المناقشة:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. لماذا نقسم التطبيق إلى مكونات صغيرة؟
+الجواب: لسهولة الصيانة، وتنظيم الكود، وإمكانية إعادة استخدام المكون الواحد في أكثر من مكان دون تكرار.
 
-Currently, two official plugins are available:
+2. ما الفرق بين <Hello /> و <hello />؟
+الجواب: <Hello /> (بحرف كبير) هو مكون Component قمنا بتعريفه نحن، أما <hello /> (بحرف صغير) هو عنصر HTML عادي.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+3. ماذا يحصل إذا نسينا export default App؟
+الجواب: لن يتمكن الملف الأساسي من استيراد المكون وعرضه، وستظهر شاشة سوداء في المتصفح.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+4. لماذا نستخدم {} أحياناً و "" أحياناً عند تمرير Props؟
+الجواب: نستخدم "" للنصوص الثابتة، ونستخدم {} للأرقام أو أي متغيرات برمجية.
